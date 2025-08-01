@@ -35,7 +35,7 @@ main {
 
 .product-header p {
     margin: 0.2rem 0;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
 }
 
@@ -86,26 +86,46 @@ main {
     border-color: #0071e3;
 }
 
+.color-text {
+    font-weight: bold;
+}
+
 .detailed-color-dots {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     gap: 6px;
     margin-top: 1rem;
-    justify-content: space-between;
+    max-width: 100%;
 }
 
 .big-dot {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 1rem;
     border-radius: 50%;
     background: #ccc;
     box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
+.big-dot.selected {
+  outline: 2px solid #0071e3;
+  outline-offset: 2px;
+}
+
+.periwinkle { background: #7986C1; }
+.peony { background: #FC89C2; }
+.aquamarine { background: #D3E5D7; }
+.tangerine { background: #FD7867; }
+.starfruit { background: #EFDF58; }
+.ultramarine { background: #434D92; }
 .lakegreen { background: #4B615F; }
 .fuschia { background: #B6407C; }
 .winterblue { background: #7897B6; }
 .white { background: #F7F7F7; }
 .black { background: #323433; }
+.plum {background: #4B3645}
+.stonegray {background: #706F6A}
+.denim {background: #45566A}
 
 .section-divider {
     margin: 20px 0;
