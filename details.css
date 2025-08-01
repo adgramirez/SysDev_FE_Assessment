@@ -1,0 +1,195 @@
+body {
+    font-family: sans-serif;
+    background: #fff;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.product-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 2rem;
+    max-width: 1000px; 
+    margin: 0 auto;     
+}
+
+.product-info {
+    flex: 1;
+    max-width: 35%;
+}
+
+.product-header h1 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.product-header p {
+    margin: 0.2rem 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.apple-card {
+    margin-top: 1rem;
+}
+
+.apple-card a {
+    color: #0071e3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.apple-card a:hover {
+     text-decoration: underline;
+}
+
+.product-size-floating {
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.product-size-floating label {
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    background: #fff;
+    padding: 0 4px;
+    font-size: 12px;
+    color: gray;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.size-dropdown {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    appearance: none;
+    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10'%3E%3Cpath fill='%23333' d='M1 1l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 10px center;
+    background-size: 12px 8px;
+    cursor: pointer;
+}
+
+.size-dropdown:focus {
+    border-color: #0071e3;
+}
+
+.detailed-color-dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.big-dot {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ccc;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.lakegreen { background: #4B615F; }
+.fuschia { background: #B6407C; }
+.winterblue { background: #7897B6; }
+.white { background: #F7F7F7; }
+.black { background: #323433; }
+
+.section-divider {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    opacity: 0.6;
+}
+
+.delivery-info, .pickup-info {
+    margin-top: 1.5rem;
+    max-width: 320px;
+}
+
+.delivery-details p, .pickup-details p {
+    margin: 2px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.delivery-details a, .pickup-details a {
+    color: #0071e3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.delivery-details a:hover, .pickup-details a:hover {
+    text-decoration: underline;
+}
+
+.add-to-bag-btn {
+    width: 100%;
+    background-color: #0071e3;
+    color: #fff;
+    border: none;
+    padding: 14px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-to-bag-btn:hover {
+    background-color: #005bb5;
+}
+
+.product-image {
+    flex: 1;
+    max-width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .product-detail-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .product-info,
+    .product-image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .product-image {
+        order: 1;
+        margin-bottom: 1.5rem;
+    }
+
+    .product-info {
+        order: 2;
+    }
+
+    .detailed-color-dots {
+        flex-wrap: wrap;
+    }
+}
