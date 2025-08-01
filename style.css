@@ -23,6 +23,16 @@ main {
     margin-bottom: 2rem;
 }
 
+.link-container a {
+    font-size: 2rem;
+    color: #0071e3;
+    text-decoration: none;
+}
+
+.link-container a:hover {
+    text-decoration: underline;
+}
+
 .product-link {
     display: flex;
     flex-direction: column;
@@ -50,9 +60,15 @@ main {
         padding: 0;
         margin: 0;
     }
+    
     main {
         padding: 0.25rem;
     }
+
+    .link-container a{
+        font-size: 1rem;
+    }
+
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.25rem;
@@ -155,11 +171,12 @@ main {
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background: #ccc;
     display: inline-block;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 .periwinkle { background: #7986C1; }
@@ -168,3 +185,8 @@ main {
 .tangerine { background: #FD7867; }
 .starfruit { background: #EFDF58; }
 .ultramarine { background: #434D92; }
+.lakegreen { background: #4B615F; }
+.fuschia { background: #B6407C; }
+.winterblue { background: #7897B6; }
+.white { background: #F7F7F7; }
+.black { background: #323433; }
